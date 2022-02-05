@@ -13,7 +13,7 @@ RUN apt-get update && \
     apt-get install -y software-properties-common $ADDITIONAL_PACKAGES && \
     rm -rf /var/lib/apt/lists/*
 
-RUN add-apt-repository --yes ppa:kicad/kicad-6.0-releases
+RUN add-apt-repository --yes ppa:kicad/kicad-5.1-releases
 
 RUN export DEBIAN_FRONTEND="noninteractive" && apt-get -qq update && \
     apt-get -qq install -y --no-install-recommends \
